@@ -5,8 +5,8 @@ total_votes = 0
 candidates = {}
 winner = ['', 0]
 
-# Read the CSV file
-with open('election_data.csv', 'r') as csvfile:
+# Read the CSV file 
+with open('/class activities/python-challenge/pypoll/resources/election_data.csv', 'r') as csvfile:
     csvreader = csv.reader(csvfile)
 
     # Read first row
@@ -28,7 +28,7 @@ with open('election_data.csv', 'r') as csvfile:
             winner[1] = candidates[row[2]]
 
 # Write the results to a txt file
-with open('PyPoll.txt', 'w') as w:
+with open('/Class activities/python-challenge/PyPoll/analysis/PyPoll.txt', 'w') as w:
 
 # Print the financial analysis to a txt file 
     w.write(f'Total Votes: {total_votes}\n')

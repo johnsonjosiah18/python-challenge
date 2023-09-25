@@ -7,8 +7,8 @@ changes = []
 greatestinc = ["", 0]
 greatestdec = ["", float('inf')]
 
-# Read the CSV file
-with open('budget_data.csv', 'r') as csvfile:
+# Read the CSV file 
+with open('/class activities/python-challenge/pybank/resources/budget_data.csv', 'r') as csvfile:
     csvreader = csv.reader(csvfile)
 
     # Read and store first row 
@@ -46,7 +46,7 @@ with open('budget_data.csv', 'r') as csvfile:
 average_change = sum(changes) / len(changes)
 
 # Write the results to a txt file
-with open('PyBank.txt', 'w') as w:
+with open('/Class activities/python-challenge/PyBank/analysis/PyBank.txt', 'w') as w:
     
 
 # Print the financial analysis to a txt file 
