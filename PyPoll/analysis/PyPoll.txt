@@ -1,7 +1,6 @@
-Financial Analysis 
-----------------------------
-Total Months: 86
-Total: $22564198
-Average Change: $-8311.11
-Greatest Increase in Profits: Aug-16 ($1862002)
-Greatest Decrease in Profits: Feb-14 ($-1825558)
+Total Votes: 369711
+Candidates:
+Charles Casper Stockham: 85213 votes (23.049%)
+Diana DeGette: 272892 votes (73.812%)
+Raymon Anthony Doane: 11606 votes (3.139%)
+Winner: Diana DeGette
