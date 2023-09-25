@@ -11,7 +11,7 @@ greatestdec = ["", float('inf')]
 with open('budget_data.csv', 'r') as csvfile:
     csvreader = csv.reader(csvfile)
 
-    # Ignore headers
+    # Read and store first row 
     header = next(csvreader)
     first_row = next(csvreader)
 
@@ -45,11 +45,15 @@ with open('budget_data.csv', 'r') as csvfile:
 # Calculate the average change using the list of changes 
 average_change = sum(changes) / len(changes)
 
-# Print the financial analysis
-print("Financial Analysis")
-print("----------------------------")
-print(f"Total Months: {totalmonths}")
-print(f"Total: ${nettotal}")
-print(f"Average Change: ${average_change:.2f}")
-print(f"Greatest Increase in Profits: {greatestinc[0]} (${greatestinc[1]})")
-print(f"Greatest Decrease in Profits: {greatestdec[0]} (${greatestdec[1]})")
+# Write the results to a txt file
+with open('PyBank.txt', 'w') as w:
+    
+
+# Print the financial analysis to a txt file 
+    w.write("Financial Analysis \n")
+    w.write("----------------------------\n")
+    w.write(f"Total Months: {totalmonths}\n")
+    w.write(f"Total: ${nettotal}\n")
+    w.write(f"Average Change: ${average_change:.2f}\n")
+    w.write(f"Greatest Increase in Profits: {greatestinc[0]} (${greatestinc[1]})\n")
+    w.write(f"Greatest Decrease in Profits: {greatestdec[0]} (${greatestdec[1]})\n")
